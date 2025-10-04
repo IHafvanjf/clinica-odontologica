@@ -35,10 +35,10 @@ O sistema inclui login de profissionais, painel de controle individual, agendame
 
 ## Tecnologias Utilizadas
 
-- Frontend: HTML5, CSS3, JavaScript (ES6+)  
-- Backend: PHP 8+  
-- Banco de Dados: MySQL 8+  
-- Bibliotecas e Recursos:  
+- **Frontend:** HTML5, CSS3, JavaScript (ES6+)  
+- **Backend:** PHP 8+  
+- **Banco de Dados:** MySQL 8+  
+- **Bibliotecas e Recursos:**  
   - Font Awesome (ícones)  
   - Fetch API (requisições assíncronas)  
   - Design responsivo e modular  
@@ -56,10 +56,9 @@ O sistema está hospedado e disponível para visualização:
 
 <div align="center">
 
-  <img src="https://github.com/user-attachments/assets/xxxxxxxxxxxxxxxx" height="520" style="margin:0 10px; vertical-align:top;" alt="Tela de Login">
-  <img src="https://github.com/user-attachments/assets/xxxxxxxxxxxxxxxx" height="520" style="margin:0 10px; vertical-align:top;" alt="Agendamento de Consultas">
-  <img src="https://github.com/user-attachments/assets/xxxxxxxxxxxxxxxx" height="520" style="margin:0 10px; vertical-align:top;" alt="Painel do Profissional">
-  <img src="https://github.com/user-attachments/assets/xxxxxxxxxxxxxxxx" height="520" style="margin:0 10px; vertical-align:top;" alt="Página Inicial da Clínica">
+  <img width="900" alt="Tela de Login e Cadastro" src="https://github.com/user-attachments/assets/0604363e-465a-4209-ba71-9a0297637308" style="margin:10px 0; border-radius:10px;">
+  <br>
+  <img width="900" alt="Painel de Controle e Agendamento" src="https://github.com/user-attachments/assets/f31ef365-d461-407d-a08d-21dc08289192" style="margin:10px 0; border-radius:10px;">
 
 </div>
 
@@ -67,10 +66,10 @@ O sistema está hospedado e disponível para visualização:
 
 ## Possíveis Extensões Futuras
 
-- [ ] Dashboard com estatísticas de pacientes e atendimentos.  
-- [ ] Sistema de notificações por e-mail/WhatsApp.  
-- [ ] Integração com API de lembretes automáticos.  
-- [ ] Cadastro de procedimentos e relatórios financeiros.  
+- [ ] Dashboard com estatísticas de pacientes e atendimentos  
+- [ ] Sistema de notificações por e-mail/WhatsApp  
+- [ ] Integração com API de lembretes automáticos  
+- [ ] Cadastro de procedimentos e relatórios financeiros  
 
 ---
 
