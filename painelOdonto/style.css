@@ -1,0 +1,89 @@
+.table-container {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  
+  th, td {
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  .schedule-table {
+    width: 100%;
+    max-width: 80%;
+    padding: 2rem;
+    margin-top: 1rem;
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .days-wrapper {
+    overflow-x: auto;
+    white-space: nowrap;
+    background: #f3f4f6;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+  
+  .calendar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .calendar-nav::before {
+    content: "<";
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  .calendar-nav::after {
+    content: ">";
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+  
+  .btn-prof {
+    padding: 0.5rem 1rem;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 0.375rem;
+    transition: background-color 0.2s;
+  }
+  .btn-prof:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .btn-back {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #4b5563;
+    color: white;
+    border-radius: 0.375rem;
+  }
+  
+  .titulo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .schedule-table {
+      padding: 1rem;
+    }
+    th, td {
+      padding: 8px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    th, td {
+      padding: 6px;
+      font-size: 12px;
+    }
+  }
+  

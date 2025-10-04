@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel Odonto</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 flex flex-col justify-center items-center min-h-screen py-4">
+  <div id="professionals-container" class="w-full max-w-5xl p-4 bg-transparent rounded-lg flex flex-wrap justify-center gap-6">
+    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+      <img src="https://placehold.co/100" alt="Profissional 1" class="mx-auto mb-4 rounded-full">
+      <h3 class="text-lg font-semibold mb-2">Dayane Santos</h3>
+      <button onclick="showScheduleTable('carlos')" class="btn-prof">Agendar</button>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+      <img src="https://placehold.co/100" alt="Profissional 2" class="mx-auto mb-4 rounded-full">
+      <h3 class="text-lg font-semibold mb-2">Gabrielle Silva</h3>
+      <button onclick="showScheduleTable('ricardo')" class="btn-prof">Agendar</button>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+      <img src="https://placehold.co/100" alt="Profissional 3" class="mx-auto mb-4 rounded-full">
+      <h3 class="text-lg font-semibold mb-2">Marcos Oliveira</h3>
+      <button onclick="showScheduleTable('marcos')" class="btn-prof">Agendar</button>
+    </div>
+  </div>
+
+  <!-- Painéis individuais -->
+  <div id="schedule-carlos" class="schedule-table hidden">
+    <div class="calendar-nav"></div>
+    <div class="days-wrapper"></div>
+    <button onclick="showProfessionals()" class="btn-back">← Voltar</button>
+    <h2 class="titulo">Agendamentos - Dayane Santos</h2>
+    <div class="overflow-x-auto mt-4 w-full">
+  <table class="min-w-full text-sm text-left">
+    <thead class="bg-gray-200">
+      <tr>
+        <th class="px-4 py-2">Nome</th>
+        <th class="px-4 py-2">Telefone</th>
+        <th class="px-4 py-2">Horário</th>
+        <th class="px-4 py-2">Serviços</th>
+        <th class="px-4 py-2">Duração</th>
+        <th class="px-4 py-2">Excluir</th>
+      </tr>
+    </thead>
+    <tbody id="agendamentosBody-carlos"></tbody>
+
+  </table>
+</div>
+
+
+  </div>
+
+  <div id="schedule-ricardo" class="schedule-table hidden">
+    <div class="calendar-nav"></div>
+    <div class="days-wrapper"></div>
+    <button onclick="showProfessionals()" class="btn-back">← Voltar</button>
+    <h2 class="titulo">Agendamentos - Ricardo Souza</h2>
+    <div class="overflow-x-auto mt-4 w-full">
+  <table class="min-w-full text-sm text-left">
+    <thead class="bg-gray-200">
+      <tr>
+        <th class="px-4 py-2">Nome</th>
+        <th class="px-4 py-2">Telefone</th>
+        <th class="px-4 py-2">Horário</th>
+        <th class="px-4 py-2">Serviços</th>
+        <th class="px-4 py-2">Duração</th>
+        <th class="px-4 py-2">Excluir</th>
+      </tr>
+    </thead>
+    <tbody id="agendamentosBody-ricardo"></tbody>
+
+
+  </table>
+</div>
+
+  </div>
+
+  <div id="schedule-marcos" class="schedule-table hidden">
+    <div class="calendar-nav"></div>
+    <div class="days-wrapper"></div>
+    <button onclick="showProfessionals()" class="btn-back">← Voltar</button>
+    <h2 class="titulo">Agendamentos - Marcos Oliveira</h2>
+    <div class="overflow-x-auto mt-4 w-full">
+  <table class="min-w-full text-sm text-left">
+    <thead class="bg-gray-200">
+      <tr>
+        <th class="px-4 py-2">Nome</th>
+        <th class="px-4 py-2">Telefone</th>
+        <th class="px-4 py-2">Horário</th>
+        <th class="px-4 py-2">Serviços</th>
+        <th class="px-4 py-2">Duração</th>
+        <th class="px-4 py-2">Excluir</th>
+      </tr>
+    </thead>
+    <tbody id="agendamentosBody-marcos"></tbody>
+
+  </table>
+</div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

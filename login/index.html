@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Recuperação de Senha</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+   <div class="container">
+        <!-- Formulário de Login -->
+        <div class="form-box login" id="login-form">
+                <div id="mensagem" class="mensagem" style="display: none;"></div>
+            <form action="login.php" method="POST">
+                <div class="input-box">
+                    <input type="text" name="nome" placeholder="Nome" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="senha" placeholder="Senha" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <button type="submit" class="btn">Entrar</button>
+            </form>
+        </div>
+
+        <!-- Formulário de Cadastro -->
+        <div class="form-box register">
+            <form action="cadastro.php" method="POST">
+                <div class="input-box">
+                    <input type="text" name="nome" placeholder="Nome" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="senha" placeholder="Senha" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <button type="submit" class="btn">Cadastrar-se</button>
+            </form>
+        </div>
+
+        <!-- Alternar entre login/cadastro -->
+        <div class="toggle-box">
+            <div class="toggle-panel toggle-left">
+                <h1>Olá, bem vindo</h1>
+                <p>Você já tem uma conta?</p>
+                <button class="btn register-btn">Cadastrar-se</button>
+            </div>
+            <div class="toggle-panel toggle-right">
+                <h1>Bem vindo de volta!</h1>
+                <p>Você já tem uma conta?</p>
+                <button class="btn login-btn">Entrar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formulários de Recuperação de Senha -->
+    <div class="form-container" id="recovery-container" style="display: none;">
+        <div class="form-box-reset active" id="forgot-password-form">
+            <h1>Recuperar Senha</h1>
+            <p>Digite seu e-mail para receber o código de recuperação.</p>
+            <div class="input-box">
+                <input type="email" id="email-input" placeholder="Digite seu email" required>
+                <i class='bx bxs-envelope'></i>
+            </div>
+            <button class="btn" id="send-code-btn">Enviar Código</button>
+        </div>
+
+        <div class="form-box-reset" id="verification-code-form">
+            <h1>Verificação</h1>
+            <p>Digite o código que enviamos para seu e-mail.</p>
+            <div class="input-box">
+                <input type="text" id="code-input" placeholder="Digite o código" required>
+                <i class='bx bxs-key'></i>
+            </div>
+            <button class="btn" id="verify-code-btn">Verificar</button>
+        </div>
+
+        <div class="form-box-reset" id="reset-password-form">
+            <h1 id="tituloNovaSenha">Nova Senha</h1>
+            <p id="txtNovaSenha">Digite sua nova senha.</p>
+            <div class="input-box" id="inputNovaSenha">
+                <input type="password" id="new-password" placeholder="Nova Senha" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="input-box" id="inputNovaSenha">
+                <input type="password" id="confirm-password"  placeholder="Confirmar Nova Senha" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <button class="btnNovaSenha" id="reset-password-btn">Redefinir Senha</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
