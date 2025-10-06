@@ -1,5 +1,7 @@
 # Sistema Web de Clínica Odontológica
 
+**Última revisão:** 03-2025
+
 Aplicação web completa desenvolvida como projeto de portfólio, representando o sistema de gestão e agendamento de uma clínica odontológica moderna.  
 O sistema inclui login de profissionais, painel de controle individual, agendamento online e gerenciamento de pacientes — tudo com foco em praticidade e experiência visual.
 
