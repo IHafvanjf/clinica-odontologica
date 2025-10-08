@@ -77,4 +77,7 @@ O sistema está hospedado e disponível para visualização:
 
 ## Licença
 
-MIT License — uso permitido apenas para fins de aprendizado e demonstração.
+Este repositório é disponibilizado para visualização e avaliação de portfólio.
+É proibido copiar, modificar, distribuir ou utilizar o código em produção ou para fins comerciais sem autorização por escrito.
+Consulte o arquivo LICENSE para os termos completos.
+
