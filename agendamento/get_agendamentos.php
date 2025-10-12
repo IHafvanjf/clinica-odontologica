@@ -1,11 +1,6 @@
 <?php
 header("Content-Type: application/json");
 
-$host = "localhost"; // SEM ":3306"
-$user = "u953537988_odontin";
-$password = "13579012Victor)";
-$database = "u953537988_odontin";
-
 $conn = new mysqli($host, $user, $password, $database);
 if ($conn->connect_error) {
     echo json_encode(["success" => false, "message" => "Erro na conexão com o banco."]);
@@ -42,3 +37,4 @@ echo json_encode(["success" => true, "horarios" => array_unique($horarios)]);
 $stmt->close();
 $conn->close();
 ?>
+
