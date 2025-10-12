@@ -2,11 +2,6 @@
 header('Content-Type: application/json; charset=utf-8');
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
-$host = "localhost";           // ⇐ do painel da Hostinger
-$user = "u953537988_odontin";      // ⇐ do painel
-$password = "13579012Victor)";    // ⇐ do painel
-$database = "u953537988_odontin";          // ⇐ do painel
-
 try {
   $conn = new mysqli($host, $user, $password, $database);
   $conn->set_charset('utf8mb4');
@@ -41,3 +36,4 @@ try {
   if (isset($stmt)) $stmt->close();
   if (isset($conn)) $conn->close();
 }
+
